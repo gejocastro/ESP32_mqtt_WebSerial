@@ -8,8 +8,6 @@
   Complete project details at https://randomnerdtutorials.com
 *********/
 
-
-
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BME280.h>
 
@@ -26,58 +24,13 @@
 
 AsyncWebServer server(80);
 
-// const char* ssid = "Your_SSID";          
-// const char* password = "Your_Password";  
-
-//void message(uint8_t *data, size_t len){
-//  WebSerial.println("Data Received!");
-//  String Data = "";
-//  for(int i=0; i < len; i++){
-//    Data += char(data[i]);
-//  }
-//  WebSerial.println(Data);
-//  if (Data == "LED ON"){
-//    digitalWrite(LED_GPIO, HIGH);
-//  }
-//  if (Data=="LED OFF"){
-//    digitalWrite(LED_GPIO, LOW);
-//  }
-//}
 void message(uint8_t *data, size_t len){
   WebSerial.println("Data Received!");
   String Data = "";
   for(int i=0; i < len; i++){
     Data += char(data[i]);
   }
-  //WebSerial.println(Data);
-  //if (Data == "LED ON"){
-   // digitalWrite(LED_GPIO, HIGH);
- // }
-  //if (Data=="LED OFF"){
-   // digitalWrite(LED_GPIO, LOW);
- // }
 }
-
-
-// void setup() {
-  // Serial.begin(115200);
-  // pinMode(LED_GPIO, OUTPUT);
-  
-//  WiFi.mode(WIFI_STA);
-//  WiFi.begin(ssid, password);
-//  if (WiFi.waitForConnectResult() != WL_CONNECTED) {
-//    Serial.printf("WiFi Failed!\n");
-//    return;
-//  }
-//  Serial.print("IP Address: ");
-//  Serial.println(WiFi.localIP());
-
-  
-// }
-
-
-
-
 
 // Configuracion del BME
 TwoWire I2CBME = TwoWire(0);
