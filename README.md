@@ -1,4 +1,5 @@
 # ESP32_mqtt_WebSerial
+##...Under construction...
 
 Works in ESP32 Lolin32 v1.0.0
 
@@ -11,6 +12,12 @@ DI: None (phisical reset)
 DO: Green LED, remotely commanded (Node-red, via MQTT)
 
 Modules: 
+...
+
+Functional description:
+...
+
+
 
 
 
