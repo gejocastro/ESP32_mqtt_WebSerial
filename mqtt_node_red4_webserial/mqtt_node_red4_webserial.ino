@@ -184,9 +184,8 @@ void send_readings () {
     dtostrf(temperature, 1, 2, tempString);
     Serial.print("Temperature: ");
     Serial.println(tempString);
-    WebSerial.print("Temperature: ");
+    WebSerial.print("Temperature: "); //pending funcion to publish to both terminals (ifpresent)
     WebSerial.println(tempString);
-
     // Publishes message
     client.publish("esp32/temperature", tempString);
 
@@ -207,7 +206,6 @@ void send_readings () {
     WebSerial.print("Pressure: ");
     WebSerial.print(presString);
     WebSerial.println(" hPa");
-
     // Publishes
     client.publish("esp32/pressure", presString);
     
@@ -260,9 +258,6 @@ void loop() {
     reconnect();
   }
   client.loop();
-
-  //WebSerial.println("Web serial monitor!");
-
 
   // Timer for sending data messages through MQTT
   long now = millis();
