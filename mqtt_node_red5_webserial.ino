@@ -281,3 +281,4 @@ void loop() {
   period = str_refresh_time.toInt() * 1000;
 
 } //end loop
+// Working 13/5/22
