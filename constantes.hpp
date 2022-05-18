@@ -9,7 +9,7 @@ const int mqtt_port = 1883;
 
 // Add MQTT server credentials
 const char* mqtt_server_user = "user"; 
-const char* mqtt_server_password = "";//"password";
+const char* mqtt_server_password = "MQTT_12$";//"password";
 
 
 // 
