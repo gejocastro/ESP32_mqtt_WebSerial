@@ -1,4 +1,3 @@
-
 // Replace the next variables with your SSID/Password combination
 const char* ssid = "TP-LINK_34C808";
 const char* password = "n163k25s";
