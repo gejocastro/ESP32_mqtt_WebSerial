@@ -4,7 +4,7 @@ const char* ssid = "WIFI-NETWORK-SSID";
 const char* password = "wifi_network_password";
 
 // Add your MQTT Broker IP address and port, example:
-const char* mqtt_server = "3.225.83.240";
+const char* mqtt_server = "MQTT_BROKER_IP (i.e. 192.168.20.34)";
 const int mqtt_port = 1883;
 
 // Add MQTT server credentials
