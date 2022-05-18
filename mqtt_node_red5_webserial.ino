@@ -27,8 +27,8 @@ void message(uint8_t *data, size_t len) {
   String Data = "";
   for (int i = 0; i < len; i++) {
     Data += char(data[i]);
-    WebSerial.println (Data);
-  }
+   }
+  WebSerial.println (Data);
 }
 
 // Configuracion del BME
