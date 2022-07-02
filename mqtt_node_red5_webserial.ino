@@ -111,9 +111,11 @@ void callback(char* topic, byte* message, unsigned int length) {
   }
   // If a message is received on topic esp32/retrieve, sets retrieve to 1 (will be used to send readings messages)
   if (String(topic) == "esp32/retrieve") {
-    Serial.print("Sending data ");
-    WebSerial.print("Sending data ");
-    retrieve = 1;
+     if (messageTemp == "retrieve"){      
+      Serial.print("Sending data ");
+      WebSerial.print("Sending data ");
+      retrieve = 1;
+     }
   }
   // If received on esp32/led_control, saves message in variable
   if (String(topic) == "esp32/led_control") {
